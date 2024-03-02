@@ -1,0 +1,65 @@
+body{
+    margin: 0px;
+}
+
+header{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+main{
+    margin-bottom: 15px;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(75, 75, 75);
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+.navbar li{
+    display: inline-block;
+}
+
+.welcome{
+    display: inline-block;
+    width: 70%;
+    margin: 10px;
+}
+
+
+.sidebar{
+    background-color: lightgrey;
+    position: fixed;
+    height: 100px;
+    display: inline-block;
+    width: 30%;
+    margin-top: 10px;
+}
+
+.sidebar-text{
+    margin-left: 10px;
+}
+
+.sidebar-title{
+    margin-left: 10px;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
