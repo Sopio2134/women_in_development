@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: hsl(24, 5%, 18%);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: hsl(30, 54%, 90%);
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+header{
+    background-color: hsl(0, 0%, 100%);
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 100px;
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+
+h1{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: hsl(24, 5%, 18%);
+}
+
+
+h2{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 10px;
+    color: hsl(30, 10%, 34%)
+
+}
+
+.preparation{
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+h3 {
+    color: purple;
+}
+
+.h3-preparation {
+    font-weight: 600;
+}
+
+.ingredients{
+    padding: 20px;
+    margin-right: 200px;
+    margin-left: 200px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.instructions{
+    background-color: hsl(0, 0%, 100%);
+    margin-right: 200px;
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.nutrition{
+    background-color: hsl(0, 0%, 100%);
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-bottom: 200px;
+    padding: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+ol li::marker {
+    color: hsl(30, 10%, 34%);
+}
+
+ol li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+ul li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+ol li span, ul li span{
+    font-weight: 600;
+}
+
+
+table { border: none; border-collapse: collapse; background-clip: padding-box; width: 700px; margin-left: 10px; margin-bottom: 20px;}
+
+table td {
+    border-bottom: 1px solid hsl(30, 10%, 34%);
+    text-align: left;
+    padding: 10px;
+}
+
+hr, .second-column {
+    color: hsl(30, 10%, 34%);
+}
+
+tr.no-bottom-border td {
+    border-bottom: none
+}
+
+.table-paragraph{
+    margin-left: 10px;
+}
+
+
+
