@@ -14,13 +14,15 @@ header{
     display: inline-block;
     margin: auto;
     width: 70%;
+    padding: 5px;
 }
 
 .sidebar{
     background-color: lightgrey;
     display: inline-block;
-    width: 30%;
-    margin: auto;
+    width: 28%;
+    margin: 5px auto;
+    padding: 5px;
 }
 
 .navbar ul{
