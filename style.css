@@ -1,5 +1,7 @@
 body{
     margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 header{
@@ -10,8 +12,17 @@ header{
     font-weight: bold;
 }
 
-main{
-    margin-bottom: 15px;
+.welcome{
+    display: inline-block;
+    margin: auto;
+    width: 70%;
+}
+
+.sidebar{
+    background-color: lightgrey;
+    display: inline-block;
+    width: 30%;
+    margin: auto;
 }
 
 .navbar ul{
@@ -33,33 +44,10 @@ main{
     display: inline-block;
 }
 
-.welcome{
-    display: inline-block;
-    width: 70%;
-    margin: 10px;
-}
-
-
-.sidebar{
-    background-color: lightgrey;
-    position: fixed;
-    height: 100px;
-    display: inline-block;
-    width: 30%;
-    margin-top: 10px;
-}
-
-.sidebar-text{
-    margin-left: 10px;
-}
-
-.sidebar-title{
-    margin-left: 10px;
-}
-
-.footer{
+footer{
     background-color: black;
     color: white;
     text-align: center;
     padding: 5px;
+    margin: auto;
 }
