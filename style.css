@@ -12,17 +12,19 @@ header{
 
 .welcome{
     display: inline-block;
+    box-sizing: border-box;
     margin: auto;
     width: 70%;
-    padding: 5px;
+    padding: 10px;
 }
 
 .sidebar{
     background-color: lightgrey;
     display: inline-block;
-    width: 28%;
-    margin: 5px auto;
-    padding: 5px;
+    box-sizing: border-box;
+    width: 30%;
+    margin: 10px auto;
+    padding: 10px;
 }
 
 .navbar ul{
