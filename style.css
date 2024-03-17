@@ -69,29 +69,75 @@ img{
 
 
 
-.container2{
-    margin: auto 10%;
-    padding: 20px;
-    background-color: white;
+ .container2 {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: 400px;
 }
 
-.container2_odd_row{
-    bottom: 50px;
-    color: white;
-    font-weight: bold;
+.container2_column_1, .container2_column_2, .container2_column_3, .container2_column_4, .container2_column_5, .container2_column_6, .container2_column_7{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 40px;
-    height: 200px;
-    padding: 60px;
-    background-color: rgb(50, 50, 100);
+    font-weight: bold;
+    color: white;
+    position: relative;
 }
 
-.container2_even_row{
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
-    height: 200px;
-    padding: 60px;
-    background-color: rgb(3, 44, 3);
+.container2_column_1 {
+    background-color: #1e7e34; /* Light green */
+    z-index: 7; /* Set higher z-index for the first column */
+    position: relative;
+    top: -40px; /* Move the first column up */
+    margin-right: -20px; /* Overlap the second column */
+}
+
+.container2_column_2 {
+    background-color: #12330c; /* Dark green */
+    z-index: 6; /* Set lower z-index for the second column */
+    position: relative;
+    margin-left: -20px; /* Overlap the third column */
+    margin-right: -40px; /* Overlap the second column more */
+}
+
+.container2_column_3 {
+    z-index: 5; /* Set lower z-index for the third column */
+    top: 40px; /* Move the third column down */
+    background-color: #1e7e34; /* Light green */
+    position: relative;
+    margin-right: -40px; /* Overlap the fourth column more */   
+}
+
+.container2_column_4 {
+    z-index: 4; /* Set lower z-index for the fourth column */
+    top: 80px;  /*Move the fourth column down */
+    position: relative;
+    background-color: #12330c; /* Light green */
+    margin-right: -40px; /* Overlap the fifth column more */   
+}
+
+.container2_column_5 {
+    z-index: 3; /* Set lower z-index for the fifth column */
+    top: 40px; /* Move the fifth column up */
+    position: relative;
+    background-color: #1e7e34; /* Light green */
+    margin-right: -40px; /* Overlap the sixth column more */   
+}
+
+.container2_column_6 {
+    z-index: 2; /* Set lower z-index for the sixth column */
+    top: 0px; /* Move the sixth column up */
+    position: relative;
+    background-color: #12330c; /* Light green */
+    margin-right: -40px; /* Overlap the seventh column more */ 
+}
+
+.container2_column_7 {
+    z-index: 1; /* Set lower z-index for the seventh column */
+    top: -40px;
+    background-color: #1e7e34; /* Light green */  
 }
