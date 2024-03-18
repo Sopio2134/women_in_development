@@ -1,82 +1,50 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
 }
 
-header{
+header {
     background-color: purple;
     text-align: center;
     padding: 5px;
     margin-bottom: 10px;
-    position: fixed;
-    top: 0;
-    width: 100%
-}
-
-.section1{
-    background-color: pink;
-    padding: 20px;
     position: sticky;
-    top: 100px;
-    z-index: -1;
+    top: 0;
+    z-index: 1;
 }
 
-.section2{
-    background-color: grey;
+
+main {
+    background-color: pink;
+    position: sticky;
+    top: 20;
+    height: 100vh;
+    padding: 20px;
+}
+
+footer {
+    background-color: gray;
+    position: sticky;
+    top: 20;
+    height: 90vh;
     padding: 40px;
-
 }
+
 
 .container1{
-    margin: auto 20%;
-    padding: 20px;
     border: 2px solid black;
-    background-color: pink;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
-.container1_odd_row{
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
-    height: 200px;
-    padding: 60px;
-    background-color: red;
-    z-index: 1;
-    position: relative;
-}
-
-.container1_even_row{
-    position: absolute;
-    z-index: 2;
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
-    height: 200px;
-    padding: 60px;
-    background-color: blue;
-}
-
-img{
-    width: 50px;
-    height: 50px;
-    display: block;
-    margin: auto;
-    padding: 20px;
-}
-
-
-
- .container2 {
+.container1, .container2{
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 70%;
     height: 400px;
+    margin: auto;
+    padding: 100px; 
 }
 
-.container2_column_1, .container2_column_2, .container2_column_3, .container2_column_4, .container2_column_5, .container2_column_6, .container2_column_7{
+.container1__odd_column, .container1__even_column{
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -88,56 +56,94 @@ img{
     position: relative;
 }
 
-.container2_column_1 {
-    background-color: #1e7e34; /* Light green */
-    z-index: 7; /* Set higher z-index for the first column */
-    position: relative;
-    top: -40px; /* Move the first column up */
-    margin-right: -20px; /* Overlap the second column */
+.container1__odd_column {
+    background-color: red; 
+    z-index: 1; 
+    top: -40px; 
+    margin-right: -20px; 
 }
 
-.container2_column_2 {
-    background-color: #12330c; /* Dark green */
-    z-index: 6; /* Set lower z-index for the second column */
-    position: relative;
-    margin-left: -20px; /* Overlap the third column */
-    margin-right: -40px; /* Overlap the second column more */
+.container1__even_column {
+    background-color: blue; 
+    z-index: 2; 
+    top: 40px; 
+    margin-right: -40px;
+    margin-left: -20px; 
 }
 
-.container2_column_3 {
-    z-index: 5; /* Set lower z-index for the third column */
-    top: 40px; /* Move the third column down */
-    background-color: #1e7e34; /* Light green */
-    position: relative;
-    margin-right: -40px; /* Overlap the fourth column more */   
+img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    padding: 10px;
 }
 
-.container2_column_4 {
-    z-index: 4; /* Set lower z-index for the fourth column */
-    top: 80px;  /*Move the fourth column down */
-    position: relative;
-    background-color: #12330c; /* Light green */
-    margin-right: -40px; /* Overlap the fifth column more */   
+.img, .container2{
+    background-color: white;
 }
 
-.container2_column_5 {
-    z-index: 3; /* Set lower z-index for the fifth column */
-    top: 40px; /* Move the fifth column up */
+.container2__column_1, .container2__column_2, .container2__column_3, .container2__column_4, .container2__column_5, .container2__column_6, .container2__column_7{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
     position: relative;
-    background-color: #1e7e34; /* Light green */
-    margin-right: -40px; /* Overlap the sixth column more */   
 }
 
-.container2_column_6 {
-    z-index: 2; /* Set lower z-index for the sixth column */
-    top: 0px; /* Move the sixth column up */
-    position: relative;
-    background-color: #12330c; /* Light green */
-    margin-right: -40px; /* Overlap the seventh column more */ 
+
+.container2__column_1, .container2__column_3, .container2__column_5, .container2__column_7{
+    background-color: #1e7e34;
 }
 
-.container2_column_7 {
-    z-index: 1; /* Set lower z-index for the seventh column */
+
+.container2__column_2, .container2__column_4, .container2__column_6{
+    background-color: #12330c; 
+}
+
+
+.container2__column_1 {
+    z-index: 7; 
+    top: -40px; 
+    margin-right: -20px; 
+}
+
+
+.container2__column_2 {
+    z-index: 6; 
+    margin-left: -20px; 
+    margin-right: -40px; 
+}
+
+.container2__column_3 {
+    z-index: 5; 
+    top: 40px; 
+    margin-right: -40px;  
+}
+
+.container2__column_4 {
+    z-index: 4; 
+    top: 80px; 
+    margin-right: -40px;  
+}
+
+.container2__column_5 {
+    z-index: 3; 
+    top: 40px; 
+    margin-right: -40px; 
+}
+
+.container2__column_6 {
+    z-index: 2; 
+    top: 0px; 
+    margin-right: -40px; 
+}
+
+.container2__column_7 {
+    z-index: 1; 
     top: -40px;
-    background-color: #1e7e34; /* Light green */  
 }
